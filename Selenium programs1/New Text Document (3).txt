@@ -1,0 +1,3 @@
+frames in selenium
+
+tagname is iframe then we say that webpage using frames.
