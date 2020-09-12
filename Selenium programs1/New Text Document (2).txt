@@ -1,0 +1,109 @@
+CSS Selector syntax tagname#idvalue
+
+tagname#classvalue
+
+tagname#idvalue+classvalue
+
+input#email
+
+input#pass.inputtext.login_form_input_box
+
+
+Xpath 
+
+relative xpath & absolute xpath
+
+//tagname[@attribute='value']
+
+absolute xpath
+
+/html/body/div[1]/div[3]/div[1]/div/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/form/div[1]/div[1]/div[1]/div[1]/div/div[1]/input
+
+
+/html/body/div[1]/div[2]/div/div/div/div[2]/form/table/tbody/tr[3]/td[2]/div/a
+
+Contains Method
+
+//tagname[contains(@attribute,'value')]
+
+//div[@class='_1lch']//button[contains(@class,'_6j mvm _6wk _6wl')]
+
+//div[@class='_1lch']//button[contains(text(),'Sign Up')]
+
+//div[@class='_1lch']//button[contains(@id,'u_0_13')]
+
+//div[@class='_1lch']//button[contains(@type,'submit')]
+
+//div[@class='_1lch']//button[contains(@name,'web')]
+
+//div[contains(@id,'reg_form_box')]//div[contains(@class,'_1lch')]//button[contains(@name,'web')]
+
+Using OR any one condition required true.
+
+//div[@class='_1lch']//button[@type='submit' or @id='u_0_13']
+
+//div[@class='_1lch']//button[@type='submit' or @id='u_0_']      locator 1 of 1
+
+Using And both conditions required true 
+
+//div[@class='_1lch']//button[@type='submit' and @id='u_0_13']
+
+
+Starts with
+
+//a[starts-with(@href,'/pages/create/?ref_type=registration_form')]
+
+//input[starts-with(@type,'email')]
+
+//div[starts-with(@class,'menu_login_container rfloat _ohf')]//input[starts-with(@type,'password')]
+
+//div[starts-with(@class,'menu_login')]//input[starts-with(@type,'pass')]
+
+//label[text()='Email or phone']
+
+
+Xpath Axes Methods
+
+1) Following
+
+//form[@id='login_form']//following::input[@id='email']
+
+//form[@id='login_form']//following::input[@id='pass']
+
+//form[@id='login_form']//following::label[@id='loginbutton']
+
+
+Syntax: 
+
+//basic xpath //following::tagname[@attribute='value'] or indexing[1][2]
+
+
+2)Ancestor
+
+//input[@id='u_0_m']//ancestor::div[1]
+
+Syntax  
+
+//basic xpath //ancestor::tagname[indexing][1][2].....[...]
+
+3) child
+
+//div[@class='registration_redesign']//child::input[@id='u_0_m']
+
+Syntax 
+
+//basic xpath //child::tagname[@attribute='value']
+
+4) preceding
+
+//div[@class='menu_login_container rfloat _ohf']//preceding::input[@name='email']
+
+Syntax
+
+//basic xpath //preceding::tagname[@attribute='value']
+
+5) Following-sibling
+
+
+//*[@id="u_0_6"]//following-sibling::label
+

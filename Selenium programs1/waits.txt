@@ -1,0 +1,24 @@
+
+Waits in selenium
+
+Thread.sleep(5000)
+
+Synchronization
+
+Selenium webdriver with website 
+
+1) implicit wait
+
+Syntax
+
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+
+2) Explicit wait
+3) Fluent wait
+
+99% only first 2 waits
+1% fluent wait.
+
+4) Thread.sleep() this is not a standard wait.
+
